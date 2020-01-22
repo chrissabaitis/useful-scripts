@@ -1,3 +1,9 @@
+# Installation instructions
+# 1. brew install imagemagick
+# 2. brew install ghostscript
+# 3. gem install mini_magick
+# this is also useful: https://www.rubyguides.com/2018/12/minimagick-gem/
+
 require 'rubygems'
 require 'mini_magick'
 
@@ -10,7 +16,7 @@ images.each do |image_path|
 
   # image_strip = image 
   # image_strip.strip
-  # image_strip.write("/Users/christophersabaitis/Desktop/resized_images/Book_Clubs_strip.jpg")
+  # image_strip.write("/Users/christophersabaitis/Desktop/resized_images/#{image_name}")
 
   image_resize = image
   image_resize = image.resize "5%"
